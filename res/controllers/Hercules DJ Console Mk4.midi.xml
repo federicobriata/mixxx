@@ -527,7 +527,7 @@
 					</output>
 					<output>
 						<group>[Channel1]</group>
-						<key>flanger</key>
+						<key>sourca</key>
 						<status>0x90</status>
 						<midino>0x13</midino>
 						<minimum>0.5</minimum>
@@ -535,7 +535,7 @@
 					</output>
 					<output>
 						<group>[Channel2]</group>
-						<key>flanger</key>
+						<key>sourcb</key>
 						<status>0x90</status>
 						<midino>0x27</midino>
 						<minimum>0.5</minimum>
