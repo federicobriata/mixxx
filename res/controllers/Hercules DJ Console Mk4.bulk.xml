@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<MixxxControllerPreset mixxxVersion="1.11+" schemaVersion="1">
+    <info>
+        <name>Hercules DJ Console Mk4</name>
+        <author>DJ26</author>
+        <description>Hercules DJ Console Mk4 bleeding edge by j26</description>
+        <devices>
+            <product protocol="bulk" vendor_id="0x06f8" product_id="0x0b107" in_epaddr="0x82" out_epaddr="0x03" />
+        </devices>
+    </info>
+    <controller id="HerculesMk4">
+        <scriptfiles>
+            <file functionprefix="" filename="common-bulk-midi.js"/>
+            <file functionprefix="" filename="Hercules-DJ-Console-Mk4-scripts.js"/>
+            <file functionprefix="Mk4" filename="Hercules-Mk4-compat.js"/>
+        </scriptfiles>
+    </controller>
+</MixxxControllerPreset>

@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<MixxxMIDIPreset schemaVersion="1" mixxxVersion="1.8.0+">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MixxxMIDIPreset  schemaVersion="1"  mixxxVersion="1.11+">
 	<info>
-		<name>Hercules DJ Console MK4</name>
-		<author>Dj kork</author>
-		<description>This is a complete mapping for Hercules DJ Console mk4 controller. Requires scripting.</description>
-		<forums>http://www.mixxx.org/forums/viewtopic.php?f=7&amp;t=3023</forums>
+	<name>Hercules DJ Console MK4</name>
+	<author>j26 edfit</author>
+	<description>shittyskripting</description>
+	<forums>http://www.mixxx.org/forums/viewtopic.php?f=7&amp;t=3023</forums>
 	</info>
-	<controller id="Hercules DJ Control Mk4 gain v3" port="">
-		<scriptfiles>
-			<file filename="Hercules-DJ-Console-Mk4-scripts.js" functionprefix="HerculesMk4"/>
-		</scriptfiles>
+	<controller id="Hercules DJ Console Mk4" port="">
+	<scriptfiles>
+	<file filename="Hercules-DJ-Console-Mk4-scripts.js" functionprefix=""/>
+	</scriptfiles>
             <controls>
-					<control>
+             <control>
 	                    <status>0xb0</status>
 	                    <midino>0x3D</midino>
 	                    <group>[Master]</group>
@@ -20,7 +20,7 @@
 	                        <normal/>
 	                    </options>
 	                </control>
-					<control>
+		<control>
 						<status>0x90</status>
 						<midino>0x2D</midino>
 						<group>[Channel1]</group>
@@ -206,7 +206,7 @@
                     <group>[Playlist]</group>
                     <key>HerculesMk4.scroll</key>
                     <options>
-                        <Script-Binding/>
+                        <Spread64/>
                     </options>
                 </control>
                 <control>
@@ -215,6 +215,7 @@
                     <group>[Channel1]</group>
                     <key>HerculesMk4.pitch</key>
                     <options>
+                        <Spread64/>
                         <Script-Binding/>
                     </options>
                 </control>
@@ -225,6 +226,7 @@
                     <key>HerculesMk4.pitch</key>
                     <options>
                         <Script-Binding/>
+                        <Spread64/>
                     </options>
                 </control>
 					<control>
@@ -422,6 +424,7 @@
                     <group>[Channel1]</group>
                     <key>HerculesMk4.loadTrack</key>
                     <options>
+                    midi.sendShortMsg(0x90, 0x11, 0x7F);
                         <Script-Binding/>
                     </options>
                 </control>
@@ -431,6 +434,7 @@
                     <group>[Channel2]</group>
                     <key>HerculesMk4.loadTrack</key>
                     <options>
+                    midi.sendShortMsg(0x90, 0x25, 0x7F);
                         <Script-Binding/>
                     </options>
                 </control>
