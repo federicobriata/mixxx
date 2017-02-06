@@ -17,7 +17,7 @@
 	                    <group>[Master]</group>
 	                    <key>headMix</key>
 	                    <options>
-	                        <normal/>
+	                        <Script-Binding/>
 	                    </options>
 	                </control>
 		<control>
@@ -195,7 +195,7 @@
                     <status>0x90</status>
                     <midino>0x2B</midino>
                     <group>[Playlist]</group>
-                    <key>HerculesMk4.scroll</key>
+                    <key>HerculesMk4.fileMode</key>
                     <options>
                         <Script-Binding/>
                     </options>
@@ -204,9 +204,9 @@
                     <status>0x90</status>
                     <midino>0x2C</midino>
                     <group>[Playlist]</group>
-                    <key>HerculesMk4.scroll</key>
+                    <key>HerculesMk4.folderMode</key>
                     <options>
-                        <Spread64/>
+			<Script-Binding/>
                     </options>
                 </control>
                 <control>
@@ -215,7 +215,6 @@
                     <group>[Channel1]</group>
                     <key>HerculesMk4.pitch</key>
                     <options>
-                        <Spread64/>
                         <Script-Binding/>
                     </options>
                 </control>
@@ -226,7 +225,6 @@
                     <key>HerculesMk4.pitch</key>
                     <options>
                         <Script-Binding/>
-                        <Spread64/>
                     </options>
                 </control>
 					<control>
@@ -280,7 +278,7 @@
                     <group>[Channel1]</group>
                     <key>filterHigh</key>
                     <options>
-                        <normal/>
+			<Invert/>
                     </options>
                 </control>
                 <control>
@@ -289,7 +287,7 @@
                     <group>[Channel1]</group>
                     <key>fwd</key>
                     <options>
-                        <Button/>
+                        <Script-Binding/>
                     </options>
                 </control>
                 <control>
@@ -298,7 +296,7 @@
                     <group>[Channel1]</group>
                     <key>filterMid</key>
                     <options>
-                        <normal/>
+			<Invert/>
                     </options>
                 </control>
                 <control>
@@ -316,7 +314,7 @@
                     <group>[Channel1]</group>
                     <key>filterLow</key>
                     <options>
-                        <normal/>
+			<Invert/>
                     </options>
                 </control>
                 <control>
@@ -352,7 +350,7 @@
                     <group>[Channel2]</group>
                     <key>filterHigh</key>
                     <options>
-                        <normal/>
+			<Invert/>
                     </options>
                 </control>
                 <control>
@@ -361,7 +359,7 @@
                     <group>[Channel2]</group>
                     <key>filterMid</key>
                     <options>
-                        <normal/>
+			<Invert/>
                     </options>
                 </control>
                 <control>
@@ -370,7 +368,7 @@
                     <group>[Channel2]</group>
                     <key>filterLow</key>
                     <options>
-                        <normal/>
+			<Invert/>
                     </options>
                 </control>
                 <control>
@@ -379,7 +377,7 @@
                     <group>[Channel1]</group>
                     <key>back</key>
                     <options>
-                        <Button/>
+                        <Script-Binding/>
                     </options>
                 </control>
                 <control>
@@ -415,7 +413,7 @@
                     <group>[Channel1]</group>
                     <key>play</key>
                     <options>
-                        <Button/>
+                        <Script-Binding/>
                     </options>
                 </control>
                 <control>
@@ -424,7 +422,6 @@
                     <group>[Channel1]</group>
                     <key>HerculesMk4.loadTrack</key>
                     <options>
-                    midi.sendShortMsg(0x90, 0x11, 0x7F);
                         <Script-Binding/>
                     </options>
                 </control>
@@ -434,17 +431,7 @@
                     <group>[Channel2]</group>
                     <key>HerculesMk4.loadTrack</key>
                     <options>
-                    midi.sendShortMsg(0x90, 0x25, 0x7F);
                         <Script-Binding/>
-                    </options>
-                </control>
-                <control>
-                    <status>0x90</status>
-                    <midino>0x13</midino>
-                    <group>[Channel1]</group>
-                    <key>flanger</key>
-                    <options>
-                        <Button/>
                     </options>
                 </control>
                 <control>
@@ -453,7 +440,7 @@
                     <group>[Channel2]</group>
                     <key>fwd</key>
                     <options>
-                        <Button/>
+                        <Script-Binding/>
                     </options>
                 </control>
                 <control>
@@ -462,7 +449,7 @@
                     <group>[Channel2]</group>
                     <key>play</key>
                     <options>
-                        <Button/>
+                        <Script-Binding/>
                     </options>
                 </control>
                 <control>
@@ -471,7 +458,7 @@
                     <group>[Channel2]</group>
                     <key>back</key>
                     <options>
-                        <Button/>
+                        <Script-Binding/>
                     </options>
                 </control>
                 <control>
@@ -485,20 +472,11 @@
                 </control>
                 <control>
                     <status>0x90</status>
-                    <midino>0x27</midino>
-                    <group>[Channel2]</group>
-                    <key>flanger</key>
-                    <options>
-                        <Button/>
-                    </options>
-                </control>
-                <control>
-                    <status>0x90</status>
                     <midino>0x29</midino>
                     <group>[Playlist]</group>
                     <key>SelectPrevTrack</key>
                     <options>
-                        <Button/>
+                        <Script-Binding/>
                     </options>
                 </control>
                 <control>
@@ -507,7 +485,7 @@
                     <group>[Playlist]</group>
                     <key>SelectNextTrack</key>
                     <options>
-                        <Button/>
+                        <Script-Binding/>
                     </options>
                 </control>
 				</controls>
