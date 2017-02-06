@@ -156,19 +156,22 @@ Mk4.incomingData = function(data, length) {
                 f = 'SelectNextTrack';
                 break;
             case 0x902b:
+		//group = '[Playlist]';
+                f = HerculesMk4.fileMode;
+                break;
             case 0x902c:
-                group = '[Playlist]';
-                f = HerculesMk4.scroll;
+                //group = '[Playlist]';
+                f = HerculesMk4.folderMode;
                 break;
             case 0x902d:
                 f = HerculesMk4.scratch;
                 break;
-            case 0x902f:
+            /*case 0x902f:
                 f = HerculesMk4.automix;
                 break;
             case 0x902e:
                 f = HerculesMk4.automix;
-                break;
+                break;*/
             case 0xb030: case 0xb031:
                 f = HerculesMk4.jogWheel;
                 break;
